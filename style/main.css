@@ -1,0 +1,430 @@
+body {
+  background-color: #FE8501;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-image: url("../assets/images/background.png");
+}
+body .Tokenomics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body .Tokenomics .containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 30%;
+  border-radius: 10px;
+  font-size: 1.5vw;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+}
+#about p {
+  font-size: 1.5vw;
+  width: 50%;
+}
+
+#audioControl {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #633300;
+  color: #fad0a4;
+  font-size: 1vw;
+  border-radius: 10px;
+  border: 2px solid #fad0a4;
+}
+
+main {
+  min-height: 200vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: url("../assets/images/cursor_cf_2.png"), auto !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+}
+
+.custom-pointer {
+  cursor: url("../assets/images/cursor_cf.png"), pointer !important;
+}
+
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url("../assets/fonts/comic.ttf") format("truetype");
+}
+* {
+  font-family: "Comic Sans MS";
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #fad0a4;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  margin-left: 50px;
+}
+header .logo img {
+  height: 8vh;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+header .logo img:hover {
+  transform: rotate(360deg);
+}
+header .list {
+  margin-right: 50px;
+}
+header .list a {
+  border: 3px solid #FE8501;
+  padding: 10px;
+  font-size: 1vw;
+  text-decoration: none;
+  color: #000;
+  border-radius: 10px;
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+header .list a:hover {
+  background-color: #FE8501;
+  color: #fad0a4;
+}
+
+footer {
+  margin-top: 150px;
+  width: 100vw;
+  min-height: 20vh;
+  background-color: #fad0a4;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer div > a {
+  margin: 30px;
+}
+footer div > a img {
+  width: 33%;
+  cursor: pointer;
+}
+footer .img_footer_logo {
+  width: 33%;
+  min-width: 150px !important;
+  cursor: pointer;
+}
+footer div .list_footer {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+footer div .list_footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #FE8501;
+  padding: 10px;
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+footer div .list_footer a:hover {
+  transform: scale(1.05);
+}
+footer div .list_footer a img {
+  cursor: pointer;
+}
+footer div .list_footer a span {
+  color: #FE8501;
+  cursor: pointer;
+}
+
+main {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.scrolling-image-left-to-right {
+  position: absolute;
+  top: 200px;
+  right: 100%;
+  animation: slideRight 8s linear infinite;
+  overflow: hidden;
+  z-index: 500;
+}
+.scrolling-image-left-to-right img {
+  width: 200px;
+}
+
+@keyframes slideRight {
+  to {
+    right: -100%;
+    rotate: 60deg;
+  }
+}
+.scrolling-image-right-to-left {
+  position: absolute;
+  top: 800px;
+  left: 100%;
+  animation: slideLeft 8s linear infinite;
+  overflow: hidden;
+  z-index: 500;
+}
+.scrolling-image-right-to-left img {
+  width: 200px;
+  transform: scaleX(-1);
+}
+
+@keyframes slideLeft {
+  to {
+    left: -100%;
+    rotate: 60deg;
+  }
+}
+.title {
+  margin-top: 100px;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#socialmedia .tothemoon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#socialmedia .tothemoon img {
+  height: 200px;
+}
+#socialmedia h3 {
+  font-size: 3em;
+}
+#socialmedia div > a {
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fad0a4;
+  border-radius: 10px;
+  width: 120px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  color: #FE8501;
+  font-size: 1em;
+  margin-top: 20px;
+  transition: 0.15s ease-in-out;
+}
+#socialmedia div > a:hover {
+  transform: scale(1.05);
+}
+#socialmedia .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#buy > div {
+  display: flex;
+  justify-content: space-around;
+}
+#buy > div a {
+  width: 30%;
+  height: 250px;
+  border-radius: 20px;
+  background-color: #fad0a4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+}
+#buy > div a img {
+  width: 140px;
+  border-radius: 20px;
+}
+#buy > div a span {
+  font-size: 1.5em;
+  color: black;
+}
+
+#tokenomics > a {
+  display: flex;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #fcdfc0;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  color: #FE8501;
+  font-size: 2em;
+  margin-top: 20px;
+  transition: 0.15s ease-in-out;
+}
+#tokenomics > a:hover {
+  background-color: #f7dcc0;
+  animation: colorRotate 6s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+#money {
+  position: absolute;
+  top: 600px;
+  left: 50px;
+  z-index: -99;
+  width: 200px;
+}
+
+#money2 {
+  position: absolute;
+  top: 1100px;
+  right: 0px;
+  z-index: -99;
+}
+
+#money3 {
+  position: absolute;
+  top: 1400px;
+  left: 0px;
+  z-index: -99;
+}
+
+#money4 {
+  position: absolute;
+  top: 1800px;
+  right: 20px;
+  z-index: -99;
+  width: 200px;
+}
+
+#money5 {
+  position: absolute;
+  top: 150px;
+  right: 60px;
+  z-index: -99;
+  width: 200px;
+}
+
+@media screen and (max-width: 1024px) {
+  #clownFishLogo {
+    display: none;
+  }
+  #about p {
+    width: 100%;
+    font-size: large;
+  }
+  header {
+    justify-content: center;
+    align-items: center;
+  }
+  header .list {
+    display: none;
+  }
+  header .logo {
+    margin: 0;
+  }
+  #money,
+  #money2,
+  #money3,
+  #money4,
+  #money5 {
+    display: none;
+  }
+  #buy > div {
+    flex-direction: column;
+  }
+  #buy > div a {
+    margin-top: 10px;
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #fad0a4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+  }
+  #buy > div a img {
+    width: 140px;
+    border-radius: 20px;
+  }
+  #buy > div a span {
+    font-size: 1em;
+    color: black;
+  }
+  #tokenomics > a {
+    font-size: 0.5em;
+  }
+  #socialmedia .social {
+    flex-direction: column;
+  }
+  #socialmedia h3 {
+    font-size: 1.5em;
+  }
+  .Tokenomics {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .Tokenomics .containers {
+    font-size: large !important;
+  }
+  body .Tokenomics .containers {
+    width: 100%;
+    margin-top: 10px;
+  }
+  main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}/*# sourceMappingURL=main.css.map */
