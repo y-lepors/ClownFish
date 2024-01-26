@@ -195,7 +195,7 @@ main .section2 {
 }
 .scrolling-image-left-to-right img {
   position: absolute;
-  width: 20vw;
+  width: 200px;
   animation: slideRight 8s linear infinite;
 }
 
