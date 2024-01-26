@@ -344,7 +344,7 @@ main .section2 {
 }
 #money {
   position: absolute;
-  top: 60vh;
+  top: 55vh;
   left: -10vw;
   z-index: -99;
   width: 200px;
