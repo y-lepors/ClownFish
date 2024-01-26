@@ -385,10 +385,10 @@ main .section2 {
     display: none;
   }
   .section1 {
-    height: 40vh !important;
+    height: 50vh !important;
   }
   .section2 {
-    height: 220vh !important;
+    height: 230vh !important;
     position: relative;
   }
   #about p {
