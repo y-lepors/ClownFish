@@ -19,6 +19,19 @@ document.getElementById("audioControl").addEventListener("click", function () {
 });
 
 
+function copyToClipboard() {
+    navigator.clipboard.writeText("BJhxkPJW4p8MMaY4eiFePMT6tVzQ8cz5Bf4Qnym7cq8");
+    // Show tooltip
+    const tooltip = document.querySelector(".tooltip");
+    tooltip.style.visibility = "visible";
+
+    // Hide the tooltip after a delay (e.g., 2 seconds)
+    setTimeout(() => {
+        tooltip.style.visibility = "hidden";
+    }, 2000);
+}
+
+
 
 
 
