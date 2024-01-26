@@ -192,31 +192,59 @@ footer {
 main {
     padding-left: 15%;
     padding-right: 15%;
-}
 
-.scrolling-image-left-to-right {
-    position: absolute;
-    top: 200px;
-    right: 100%;
-    animation: slideRight 8s linear infinite;
-    overflow: hidden;
-    z-index: 500;
+    .section1 {
+        height: 70vh;
+        position: relative;
+    }
 
-    img {
-        width: 200px;
+    .section2 {
+        height: 140vh;
+        position: relative;
     }
 }
 
-  @keyframes slideRight {
-    to {
-        right: -100%;
+.scrolling-image-left-to-right {
+    height: 40vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: visible;
+    z-index: 500;
+    
+
+    img {
+        position: absolute;
+        width: 20vw;
+        animation: slideRight 8s linear infinite;
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        left: calc(0% - 20vw);
+        transform: rotateY(0deg);
+    }
+    49%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        left: calc(100%);
+        transform: rotateY(180deg);
         rotate: 60deg;
+    }
+    99%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        left: calc(0% - 50vw);
     }
 }
 
 .scrolling-image-right-to-left {
     position: absolute;
-    top: 800px;
+    top: 0px;
     left: 100%;
     animation: slideLeft 8s linear infinite;
     overflow: hidden;
@@ -360,8 +388,8 @@ main {
 
 #money {
     position: absolute;
-    top: 600px;
-    left: 50px;
+    top: 50vh;
+    left: -10vw;
     z-index: -99;
     width: 200px;
 }
@@ -402,20 +430,21 @@ main {
         display: none;
     }
 
+    .section1 {
+        height: 40vh !important;
+    }
+
+    .section2 {
+        height: 220vh !important;
+        position: relative;
+    }
+
     #about {
         p {
             width: 100%;
             font-size: large;
         }
     }
-
-    // .scrolling-image-left-to-right {
-    //     display: none;
-    // }
-
-    // .scrolling-image-right-to-left {
-    //     display: none;
-    // }
 
     header {
         justify-content: center;
